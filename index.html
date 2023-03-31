@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Miads Gästebuch &#128421; &#127918
+        </title>
+        <style>
+            body{
+                background-color:blue;
+                color: rgb(13, 218, 218);
+                background-image:linear-gradient(to top right,rgb(50, 22, 209), rgb(49, 35, 35) );
+                background-repeat: no-repeat;
+                
+            } 
+            @font-face {
+                font-family:"Meine Schrift";
+                src: url(./Tomatoes-O8L8.ttf);
+            }
+            .Headline {font-family:"Meine Schrift";
+              color: black;
+              border-color: black;
+              border-width: 2;
+              border-style: ridge;
+              border-radius: 15px;
+        }
+        .primary-color {
+            color: rgb(24, 22, 26);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: none;
+            
+        }
+        .secondary-color {
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            border:none;
+        }
+        
+
+        
+        .platz-nach-innen {
+            padding: 30px;
+        }
+        .platz-nach-außen {
+            margin: 20px;
+        }
+        .schatten-grau {
+            box-shadow: 10px 5px 5px black;
+        }
+        .hoverbar:hover {
+            background-color:rgb(29, 62, 209) ;
+            box-shadow: 10px 5px 5px black;
+        }
+        .hoverbar2:hover {
+            box-shadow: 10px 5px 5px black;
+            
+            
+        }
+        .img-border {
+            border-width: 2;
+            border-style:ridge;
+            border-radius: 15px;
+            border-color: black;
+
+        }
+        .shadow {
+            box-shadow: 10px 5px 5px black;
+        }
+        .color3 {
+            color: rgb(13, 218, 218);
+        }
+        
+       
+        
+
+
+        </style>
+        <script>
+            window.onload = () => {
+                let commentbutton = document.getElementById("comment-button")
+                let inputText = document.getElementById("text-input")
+                let kommentarContainer = document.getElementById("kommentar-container")
+
+
+            
+            commentbutton.onclick = () => {
+                    let textValue = inputText.value
+                    kommentarContainer.insertAdjacentHTML("afterbegin", `
+                    <div><h2>neuer Kommentar:</h2>
+                        <div>${textValue}</div>
+                    </div>
+                        `)
+
+            }}
+        </script>
+    </head>
+    <body>
+         <h1 class="hoverbar Headline platz-nach-innen" >
+            Mein Profil &#129398;
+         </h1>
+         <div><h2 class="secondary-color"><u>Mein Name ist Miad Rupp</u></h2></div>
+         <h4>Ein paar Fakten über mich</h4>
+         <div>
+            <ul>
+                <li>Ich bin 19 Jahre alt</li>
+                <li>Ich bin am 02.02.2022 18 Jahre alt geworden</li>
+                <li>ich mache zurzeit ein FSJ in der Tagesgruppe Mafalda in Obbereut</li>
+                <li>Mein Harry Potter Haus ist Slytherin &#128013</li>
+                <li><a class="color3" href="https://www.daskochrezept.de/rezepte/schnitzel-mit-pommes"> Hier ein Link zu meinem Lieblingessen</a></li>
+                <li><a class="color3" href="https://medal.tv/de/games/valorant/clips/t7YfUL9wMZbDk/byxm3hmMEW8t">Krasser Val Clip</a></li>
+                <li><a class="color3" href="https://steamcommunity.com/profiles/76561198829440291/inventory/#730"> Mein Cs Inventar</a></li>
+            </ul>
+            <button class=" hoverbar2 platz-nach-außen">Hier ist noch ein Button der nur eure Zeit verschwendet weil er absolut nichts kann</button>
+         </div>
+         <span>Hier bin ich noch klein</span> 
+         <img class="img-border shadow" src="Bilder/Miad klein 2006.JPG" width="200"/>
+
+         Und hier bin ich müde <img class="img-border shadow" src="Bilder/Tired af.jpeg"width="200"/>
+         <div>
+            <h2 class="secondary-color"><u>Meine Hobbys:</u></h2>
+         </div>
+          <ul>
+           <li><h4>Gaming</h4></li>
+           <li><h4>Anime</h4></li>
+           <li><h4>Schach</h4></li>
+          </ul>
+              <div><h2 class="secondary-color"><u> Lieblingcharaktere in verschiedenen Anime:</u></h2></div>
+              <h4><h3>Bluelock:</h3>Barou Shoei</h4>       <img class="shadow img-border" src="Bilder/blue-lock-ep-8-king-barou-returns.webp" width="200"/>
+              <h4><h3>Attack on Titan:</h3>Eren Jäger</h4> <img class="shadow img-border" src="Bilder/Eren.jpg"width="200"/>
+              <h4><h3>Chainsaw Man:</h3>Power</h4>         <img class="shadow img-border" src="Bilder/Power Chainsawman.png" width="200"/>
+              <h4><h3>HunterXHunter:</h3>Killua</h4>       <img class="shadow img-border" src="Bilder/Killua.jpg"width="200"/> 
+
+
+              <div><h2 class="secondary-color"><u>Eines meiner Lieblingspiele ist Dead by Daylight hier ist noch ein cooles Video von einem Competetive Dbd Tournament:</u></h2></div>
+              <iframe class="shadow img-border" width="560" height="315" src="https://www.youtube.com/embed/fQLB6LGXXgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <h2 class="secondary-color"><u>Hier ist noch meine Playlist</u></h2>
+              <iframe class="shadow img-border" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3HJgRV9KRn1IjFAgjjB58H?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              
+              <h2 class="secondary-color"><u>Lasse noch einen netten Kommentar da</u></h2>
+              <input class="img-border" type="text" id="text-input">
+               <button  id="comment-button">Senden</button>
+               <div id="kommentar-container"></div>
+
+    </body>
+</html>
